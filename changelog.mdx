@@ -1,0 +1,118 @@
+---
+title: Changelog
+description: Stay updated with the latest releases, bug fixes, and new features in Anastasiia Konevytska.
+---
+
+## Recent Releases
+
+Track all changes to Anastasiia Konevytska in this changelog. You receive notifications for major releases, and this page details every update. Review the latest versions below to see new capabilities, fixes, and improvements.
+
+<Update label="2024-10-15" description="v1.2.0" tags={["feature", "improvement"]}>
+
+## New Features
+
+- Added real-time collaboration editing for documentation pages
+- Introduced custom brand color support (`#3B82F6` by default)
+- New search indexing for faster topic discovery
+
+## Improvements
+
+- Enhanced mobile responsiveness for all doc pages
+- Optimized image loading for better performance
+
+## Bug Fixes
+
+- Fixed anchor link navigation issues in long pages
+- Resolved YAML frontmatter parsing errors
+
+</Update>
+
+<Update label="2024-09-20" description="v1.1.0" tags={["feature", "bugfix"]}>
+
+## New Features
+
+- Integrated MDX component library with 15+ components
+- Added changelog-specific `Update` component for structured release notes
+
+## Bug Fixes
+
+- Corrected special character escaping in prose (`{variable}`, `<100ms`)
+- Fixed nested code block rendering (4 backticks for JSX interiors)
+
+</Update>
+
+<Update label="2024-08-10" description="v1.0.0" tags={["feature", "breaking"]}>
+
+## Initial Release
+
+- Core documentation platform with MDX support
+- YAML frontmatter validation and H2-first heading enforcement
+- Built-in components: Cards, Steps, Tabs, Callout, and more
+
+## Breaking Changes
+
+- Enforced no H1 headings; use frontmatter for titles
+
+</Update>
+
+## How to Upgrade
+
+Upgrading keeps you on the latest version. Follow these steps to update your Anastasiia Konevytska instance.
+
+<Steps>
+  <Step title="Check Current Version" icon="package">
+    Run the version check command in your project root.
+
+````bash
+npx anastasiia-version
+````
+
+  </Step>
+  <Step title="Update Package" icon="download">
+    Install the latest version using your package manager.
+
+    <CodeGroup tabs="npm,yarn">
+````bash
+npm install anastasiia-konevytska@latest
+````
+````bash
+yarn add anastasiia-konevytska@latest
+````
+    </CodeGroup>
+  </Step>
+  <Step title="Rebuild Docs" icon="refresh-cw">
+    Rebuild your documentation site.
+
+````bash
+npm run build
+````
+
+  </Step>
+  <Step title="Verify Changes" icon="check-circle">
+    Test key pages like this changelog for new components.
+  </Step>
+</Steps>
+
+<Callout kind="tip">
+Subscribe to release notifications via your dashboard at `https://dashboard.example.com/notifications` to stay ahead.
+</Callout>
+
+## Upcoming Changes
+
+Preview what's next for Anastasiia Konevytska. These features enter beta soon.
+
+<Columns cols={3}>
+  <Card title="AI Assistant" icon="bot" href="#">
+    Automated doc generation and suggestions.
+  </Card>
+  <Card title="Versioned Docs" icon="git-branch" href="#">
+    Publish multiple doc versions simultaneously.
+  </Card>
+  <Card title="Analytics" icon="bar-chart-3" href="#">
+    Track page views and user engagement.
+  </Card>
+</Columns>
+
+<Callout kind="info">
+Found a bug or have feedback? Open an issue on GitHub with details about your environment and reproduction steps.
+</Callout>
